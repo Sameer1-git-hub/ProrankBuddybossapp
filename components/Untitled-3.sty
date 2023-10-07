@@ -1,0 +1,15 @@
+ return <AppButton
+   disabled={disabled}
+   style={[{ marginTop: 17 }, global.regButtonContainer]}
+   // onPress={doSignup}
+   onPress={signupAction}
+   label={label}
+   global={global}
+   loading={loading}
+   labelStyle={[
+     global.buttonLabel,
+     global.regButtonLabel,
+     disabled && { opacity: 0.4 }
+   ]}
+   spinnerColor={spinnerColor}
+ />
